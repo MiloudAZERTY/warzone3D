@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WARZONE 3D</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="menu">
+    <h1>WARZONE 3D</h1>
+    <p>Prépare-toi au combat !</p>
+
+    <div id="multiplayerMenu">
+      <h2>PARTIE MULTIJOUEUR</h2>
+
+      <button id="createRoomButton" type="button">
+        CRÉER UNE PARTIE PRIVÉE
+      </button>
+
+      <p>OU REJOINDRE UN AMI</p>
+
+      <input
+        id="roomCodeInput"
+        type="text"
+        maxlength="6"
+        placeholder="CODE DE LA PARTIE"
+        autocomplete="off"
+      >
+
+      <button id="joinRoomButton" type="button">
+        REJOINDRE LA PARTIE
+      </button>
+
+      <button id="discordInviteButton" type="button">
+        INVITER VIA DISCORD
+      </button>
+
+      <p id="roomInfo">Aucune partie sélectionnée</p>
+    </div>
+
+    <button id="playButton" type="button">
+      JOUER
+    </button>
+
+    <p id="status">Connexion au serveur...</p>
+  </div>
+
+  <div id="game">
+    <div id="crosshair">+</div>
+    <div id="hud">VIE : <span id="health">100</span></div>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script type="module" src="game.js"></script>
+</body>
+</html>

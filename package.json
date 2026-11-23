@@ -1,0 +1,19 @@
+
+{
+  "name": "warzone3d",
+  "version": "1.0.0",
+  "description": "Jeu FPS multijoueur 3D",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "bot": "node bot.js",
+    "deploy": "node deploy-commands.js"
+  },
+  "dependencies": {
+    "discord.js": "^14.19.3",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "socket.io": "^4.8.1"
+  }
+}
+
